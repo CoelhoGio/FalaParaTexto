@@ -1,4 +1,5 @@
 import speech_recognition as sr
+import sys
 
 #Função para ouvir e reconhecer a fala
 def ouvir_microfone():
@@ -32,9 +33,11 @@ def ouvir_microfone():
         f.write(frase + "\n")
         f.close()
 
-        #Controle de finalização com palavra não existente em português
-        if "partito" in frase:
-            return print('encerrado')
+        #Controle de finalização
+        if "traço encerrar" in frase:
+            print("encerrado")
+            return quit()
+           
 
 
         else:
@@ -46,7 +49,7 @@ def ouvir_microfone():
     except sr.UnknownValueError:
         print("Não entendi")
         
-    return frase
+    return ouvir_microfone()
 
 
 ouvir_microfone()
