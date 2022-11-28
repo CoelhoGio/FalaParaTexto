@@ -5,5 +5,6 @@ Código feito com intuíto de me auxiliar a tomar notas durante meus estudos. Ao
 Para executar o código, é necessário o uso do terminal. Você pode abrir o prompt de comando na pasta em que o código está salvo e executar o comando
 
 ```
-teste
+py main.py
 ```
+
