@@ -1,13 +1,13 @@
 import speech_recognition as sr
-import sys
 
 #Função para ouvir e reconhecer a fala
 def ouvir_microfone():
+
     #Habilita o microfone do usuário
     microfone = sr.Recognizer()
-    
-    f = open("estudar.txt", "a")
 
+    #Abre o arquivo de texto
+    f = open("estudo.txt", "a")
 
     #usando o microfone
     with sr.Microphone() as source:
@@ -37,14 +37,10 @@ def ouvir_microfone():
         if "traço encerrar" in frase:
             print("encerrado")
             return quit()
-           
-
-
         else:
             ouvir_microfone()
 
         
-            
     #Se nao reconheceu o padrao de fala, exibe a mensagem
     except sr.UnknownValueError:
         print("Não entendi")
