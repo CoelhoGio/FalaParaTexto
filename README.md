@@ -8,3 +8,4 @@ Para executar o código, é necessário o uso do terminal. Você pode abrir o pr
 py main.py
 ```
 
+No terminal irá aparecer escrito "Diga alguma coisa", sinalizando que o programa está pronto para funcionar, além de criar um arquivo .txt na pasta em que o main.py está salvo. Quando você quiser encerrar o programa, basta dizer "traço encerrar". Talvez seja necessario falar devagar ou repetir algumas vezes. Após isso, será necessário revisar o conteúdo que você falou, pois o programa apenas reconhece palavras, e trata pontuação dessa mesma forma. Às vezes pode acontecer do programa travar em alguma das etapas, sendo necessário fechar o terminal ou usar Ctrl + C pra encerrar.
